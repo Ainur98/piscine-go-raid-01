@@ -17,23 +17,20 @@ func Raid1a(x, y int) {
 			}
 			z01.PrintRune(10)
 
-		} else{
-			for p:=0 ; p < x ; p ++{
-				if p==0 || p==x-1 {
+		} else {
+			for p := 0; p < x; p++ {
+				if p == 0 || p == x-1 {
 					z01.PrintRune('|')
-					} else {
-						z01.PrintRune(' ')
-					}					
-				} 
-				z01.PrintRune(10)
-			} 
-		
+				} else {
+					z01.PrintRune(' ')
+				}
 			}
+			z01.PrintRune(10)
 		}
 
-	
+	}
+}
 
-
-func main(){
-	Raid1a(5,3)
+func main() {
+	Raid1a(5, 3)
 }
